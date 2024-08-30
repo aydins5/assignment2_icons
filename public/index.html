@@ -1,8 +1,75 @@
 <!doctype html>
 <head>
     <title> Climate Icons </title>
+    <style>
+        .row{
+            width:720px;
+            margin: 10px auto 10px auto ;
+        }
+        .image-container {
+            display: table-cell;
+            vertical-align: middle;
+            padding:20px;
+        }
+    </style>
 </head>
 
 <body>
-    This is a test!
+    <div class="row">
+        <div class="image-container"><img id="rain1" src="img/rain1.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="cold1" src="img/cold1.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="thunder1" src="img/thunder1.png" height="200" width="200"/></div>
+    </div>
+
+    <div class="row">
+        <div class="image-container"><img id="flood1" src="img/flood1.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="sunny1" src="img/sunny1.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="hot1" src="img/hot1.png" height="200" width="200"/></div>
+        </div>
+
+    <div class="row">
+        <div class="image-container"><img id=tornado1.png src="img/tornado1.png" height="200" width="200"/></div>
+        <div class="image-container"><img id=volcano1.png src="img/volcano1.png" height="200" width="200"/></div>
+        <div class="image-container"><img id=wind1.png src="img/wind1.png" height="200" width="200"/></div>
+    </div>
 </body>
+
+<script>
+    const rain1 = document.getElementById ('rain1')
+    const rain_audio = new Audio ('audio/rain_audio.mp3')
+    rain1.onpointerdown = () => {
+      rain_audio.play ()
+      rain1.src = 'img/rain2.png'
+      setTimeout (() => rain1.src = 'img/rain1.png', 1000)
+    }
+</script>
+
+<script>
+    const cold1 = document.getElementById ('cold1')
+    const cold_audio = new Audio ('audio/cold_audio.mp3')
+    cold1.onpointerdown = () => cold_audio.play ()
+</script>
+
+<script>
+    const thunder1 = document.getElementById ('thunder1')
+    const thunder_audio = new Audio ('audio/thunder_audio.mp3')
+    thunder1.onpointerdown = () => thunder_audio.play ()
+</script>
+
+<script>
+    const flood1 = document.getElementById ('flood1')
+    const flood_audio = new Audio ('audio/flood_audio.mp3')
+    flood1.onpointerdown = () => flood_audio.play ()
+</script>
+
+<script>
+    const sunny1 = document.getElementById ('sunny1')
+    const sunny_audio = new Audio ('audio/sunny_audio.mp3')
+    sunny1.onpointerdown = () => sunny_audio.play ()
+</script>
+
+<script>
+    const hot1 = document.getElementById ('hot1')
+    const flood_audio = new Audio ('audio/flood_audio.mp3')
+    flood1.onpointerdown = () => flood_audio.play ()
+</script>
