@@ -47,29 +47,69 @@
 <script>
     const cold1 = document.getElementById ('cold1')
     const cold_audio = new Audio ('audio/cold_audio.mp3')
-    cold1.onpointerdown = () => cold_audio.play ()
+    cold1.onpointerdown = () => {
+      cold_audio.play ()
+      cold1.src = 'img/cold2.png'
+      setTimeout (() => cold1.src = 'img/cold1.png', 1000)
+    }
 </script>
 
 <script>
     const thunder1 = document.getElementById ('thunder1')
     const thunder_audio = new Audio ('audio/thunder_audio.mp3')
-    thunder1.onpointerdown = () => thunder_audio.play ()
+    thunder1.onpointerdown = () => {
+      thunder_audio.play ()
+      thunder1.src = 'img/thunder2.png'
+      setTimeout (() => thunder1.src = 'img/thunder1.png', 1000)
+    }
 </script>
 
 <script>
     const flood1 = document.getElementById ('flood1')
     const flood_audio = new Audio ('audio/flood_audio.mp3')
-    flood1.onpointerdown = () => flood_audio.play ()
+    flood1.onpointerdown = () => {
+      flood_audio.play ()
+      flood1.src = 'img/flood2.png'
+      setTimeout (() => flood1.src = 'img/flood1.png', 1000)
+    }
 </script>
 
 <script>
     const sunny1 = document.getElementById ('sunny1')
     const sunny_audio = new Audio ('audio/sunny_audio.mp3')
-    sunny1.onpointerdown = () => sunny_audio.play ()
+    sunny1.onpointerdown = () => {
+      sunny_audio.play ()
+      sunny1.src = 'img/sunny2.png'
+      setTimeout (() => sunny1.src = 'img/sunny1.png', 1000)
+    }
 </script>
 
 <script>
     const hot1 = document.getElementById ('hot1')
-    const flood_audio = new Audio ('audio/flood_audio.mp3')
-    flood1.onpointerdown = () => flood_audio.play ()
+    const hot_audio = new Audio ('audio/hot_audio.mp3')
+    hot1.onpointerdown = () => {
+      hot_audio.play ()
+      hot1.src = 'img/hot2.png'
+      setTimeout (() => hot1.src = 'img/hot1.png', 1000)
+    }
+</script>
+
+<script>
+    const tornado1 = document.getElementById ('tornado1')
+    const tornado_audio = new Audio ('audio/tornado_audio.mp3')
+    tornado1.onpointerdown = () => {
+      tornado_audio.play ()
+      tornado1.src = 'img/tornado2.png'
+      setTimeout (() => tornado1.src = 'img/tornado1.png', 1000)
+    }
+</script>
+
+<script>
+    const sunny1 = document.getElementById ('sunny1')
+    const sunny_audio = new Audio ('audio/sunny_audio.mp3')
+    sunny1.onpointerdown = () => {
+      sunny_audio.play ()
+      sunny1.src = 'img/sunny2.png'
+      setTimeout (() => sunny1.src = 'img/sunny1.png', 1000)
+    }
 </script>
