@@ -28,9 +28,9 @@
         </div>
 
     <div class="row">
-        <div class="image-container"><img id=tornado1.png src="img/tornado1.png" height="200" width="200"/></div>
-        <div class="image-container"><img id=volcano1.png src="img/volcano1.png" height="200" width="200"/></div>
-        <div class="image-container"><img id=wind1.png src="img/wind1.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="tornado1" src="img/tornado1.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="volcano1" src="img/volcano1.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="wind1" src="img/wind1.png" height="200" width="200"/></div>
     </div>
 </body>
 
@@ -105,11 +105,21 @@
 </script>
 
 <script>
-    const sunny1 = document.getElementById ('sunny1')
-    const sunny_audio = new Audio ('audio/sunny_audio.mp3')
-    sunny1.onpointerdown = () => {
-      sunny_audio.play ()
-      sunny1.src = 'img/sunny2.png'
-      setTimeout (() => sunny1.src = 'img/sunny1.png', 1000)
+    const volcano1 = document.getElementById ('volcano1')
+    const volcano_audio = new Audio ('audio/volcano_audio.mp3')
+    volcano1.onpointerdown = () => {
+      volcano_audio.play ()
+      volcano1.src = 'img/volcano2.png'
+      setTimeout (() => volcano1.src = 'img/volcano1.png', 1000)
     }
+</script>
+
+<script>
+  const wind1 = document.getElementById ('wind1')
+  const wind_audio = new Audio ('audio/wind_audio.mp3')
+  wind1.onpointerdown = () => {
+    wind_audio.play ()
+    wind1.src = 'img/wind2.png'
+    setTimeout (() => wind1.src = 'img/wind1.png', 1000)
+  }
 </script>
